@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArabicActivity">
+
+    <RelativeLayout
+        android:id="@+id/l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="1"
+            android:textSize="60sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/num"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/num"
+            android:text="العنوان الأول"
+            android:textSize="50sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/mem"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حفظ"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/ex"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mem"
+                android:text="تمرين"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l"
+        android:layout_marginTop="8dp"
+        android:background="@color/secondaryText"></View>
+
+    <RelativeLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l">
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="2"
+            android:textSize="60sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/num2"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/num2"
+            android:text="العنوان الثاني"
+            android:textSize="50sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/mem2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="حفظ"
+                android:textColor="@android:color/holo_red_light"
+
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/ex2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/mem2"
+                android:text="تمرين"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l"
+        android:layout_marginTop="8dp"
+        android:background="@color/secondaryText"></View>
+
+</RelativeLayout>
+
+    <!-- THE FRENCH/ENGLISH VERSION
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ArabicActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="1"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/num"
+                android:text="First title"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mem"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:text="حفظ"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mem"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/ex"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:text="تمرين"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    --><!--   <TextView
+                    android:id="@+id/mem"
+                    android:layout_width="match_parent"
+                    android:background="#4556ba"
+                    android:text="حفظ"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/ex"
+                    android:layout_width="match_parent"
+                    android:background="#4354b8"
+                    android:text="تمارين"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/sum"
+                    android:layout_width="match_parent"
+                    android:background="#4354b8"
+                    android:text="مُلخصات"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    /> -->
